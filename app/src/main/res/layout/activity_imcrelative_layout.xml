@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IMCRelativeLayout">
+
+    <Button
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azera"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bzera"
+        android:layout_below="@id/a"
+        />
+
+    <Button
+        android:id="@+id/c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Czera"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dzera"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ezera"
+        android:layout_toRightOf="@id/d"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fzera"
+        android:layout_above="@id/g"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gzera"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hzera"
+        android:layout_toEndOf="@id/f"
+        android:layout_alignBaseline="@id/f"
+        />
+
+    <Button
+        android:id="@+id/i"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Izera"
+        android:layout_toEndOf="@id/c"
+        android:layout_below="@id/c"
+        />
+</RelativeLayout>
