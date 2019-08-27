@@ -63,8 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imcLabel"
         android:layout_centerHorizontal="true"
-        android:text="calcula imc"
-        android:onClick="calculaIMC"/>
+        android:text="calcula imc" />
 
     <Button
         android:id="@+id/creditos"

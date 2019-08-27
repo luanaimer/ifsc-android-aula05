@@ -10,20 +10,32 @@ import android.widget.TextView;
 
 public class IMCRelativeLayout extends AppCompatActivity {
 
+    EditText edPeso, edAltura;
+    String peso, altura;
+    Button button;
+    TextView imcLabel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imcrelative_layout);
+        edPeso = findViewById(R.id.pesoEdit);
+        edAltura = findViewById(R.id.alturaEdit);
+        button = findViewById(R.id.calcImc);
+
+        imcLabel = findViewById(R.id.imcLabel);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                peso = edPeso.getText().toString();
+                altura = edAltura.getText().toString();
+                calculaIMC(Double.parseDouble(peso), Double.parseDouble(altura));
+            }
+        });
     }
 
-    public void calculaIMC(View view) {
-        EditText edPeso = findViewById(R.id.pesoEdit);
-        EditText edAltura = findViewById(R.id.alturaEdit);
-
-        Double peso = Double.parseDouble(edPeso.getText().toString());
-        Double altura = Double.parseDouble(edAltura.getText().toString());
-
-        TextView imcLabel = findViewById(R.id.imcLabel);
+    public void calculaIMC(double peso, double altura) {
 
         String calculo = String.valueOf(peso / (altura * altura));
 
